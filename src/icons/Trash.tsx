@@ -1,6 +1,4 @@
-import React from "react";
-
-const trash = () => {
+const Trash = () => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -17,4 +15,4 @@ const trash = () => {
   );
 };
 
-export default trash;
+export default Trash;

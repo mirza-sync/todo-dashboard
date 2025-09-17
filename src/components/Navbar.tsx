@@ -3,8 +3,6 @@ import { useAuth } from "../hooks/useAuth";
 import { useNavigate } from "react-router";
 import Button from "./ui/Button";
 
-type NavbarProps = {};
-
 const Nav = styled.nav`
   height: 72px;
   background: #ffffff;
