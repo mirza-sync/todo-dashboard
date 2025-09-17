@@ -1,0 +1,38 @@
+dialog {
+  background: #ffffff 0% 0% no-repeat padding-box;
+  box-shadow: 0px 3px 6px #00000029;
+  border-radius: 12px;
+  border: none;
+  width: auto;
+  margin-inline: 12px;
+  padding: 24px;
+}
+
+@media only screen and (min-width: 769px) {
+  dialog {
+    width: fit-content;
+    margin: auto;
+  }
+}
+
+dialog form {
+  display: flex;
+  flex-direction: column;
+}
+
+.dialog-title {
+  text-align: left;
+  font: normal normal 500 20px/24px Montserrat;
+  letter-spacing: 0px;
+  color: #537178;
+  margin-bottom: 24px;
+}
+
+.dialog-input {
+  height: 40px;
+  background: #eef1f8 0% 0% no-repeat padding-box;
+  border-radius: 8px;
+  margin-bottom: 12px;
+  border: none;
+  padding-inline: 16px;
+}
