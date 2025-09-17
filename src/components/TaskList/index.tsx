@@ -32,7 +32,7 @@ const TitleWrapper = styled.div`
 `;
 
 const SearchInput = styled.input`
-  background: #d9dfeb 0% 0% no-repeat padding-box;
+  background: #d9dfeb;
   border-radius: 8px;
   height: 40px;
   border: none;
