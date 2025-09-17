@@ -2,7 +2,11 @@ import { useState } from "react";
 import Button from "../ui/Button";
 import TaskDialog from "../TaskDialog";
 
-const NoTask = () => {
+type NoTaskProps = {
+  addTask: (title: string) => void;
+};
+
+const NoTask = ({ addTask }: NoTaskProps) => {
   const [isDialogOpen, setIsDialogOpen] = useState(false);
 
   return (
@@ -26,7 +30,7 @@ const NoTask = () => {
       <TaskDialog
         isOpen={isDialogOpen}
         onClose={() => setIsDialogOpen(false)}
-        onSubmit={() => null}
+        onSubmit={addTask}
       />
     </>
   );

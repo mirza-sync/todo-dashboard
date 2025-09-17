@@ -41,7 +41,7 @@ const Dashboard = () => {
       <Navbar />
       <Layout>
         {allTasks.length === 0 ? (
-          <NoTask />
+          <NoTask addTask={addTask} />
         ) : (
           <>
             <InfoWrapper>
