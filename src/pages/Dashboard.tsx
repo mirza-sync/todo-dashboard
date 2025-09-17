@@ -7,6 +7,7 @@ import TaskChart from "../components/TaskChart";
 import InfoWrapper from "../components/ui/InfoWrapper";
 import Navbar from "../components/Navbar";
 import styled from "styled-components";
+import LoadingOverlay from "../components/Loading";
 
 const Container = styled.div`
   height: 100%;
@@ -32,7 +33,7 @@ const Dashboard = () => {
   } = useTask();
 
   if (loading) {
-    return <div>Loading...</div>;
+    return <LoadingOverlay visible={loading} />;
   }
 
   return (

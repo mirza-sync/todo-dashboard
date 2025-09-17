@@ -5,6 +5,7 @@ import Card from "../components/ui/Card";
 import styled from "styled-components";
 import Button from "../components/ui/Button";
 import Title from "../components/ui/Title";
+import LoadingOverlay from "../components/Loading";
 
 const Container = styled.div`
   height: 100%;
@@ -45,7 +46,7 @@ const Login = () => {
   };
 
   if (isLoading) {
-    return <div>Loading...</div>;
+    return <LoadingOverlay visible={isLoading} />;
   }
 
   if (isAuthenticated) {
